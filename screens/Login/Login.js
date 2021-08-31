@@ -7,21 +7,25 @@ import { Ionicons } from 'react-native-vector-icons/Ionicons'
 const Login = () => {
     return (
         <ScrollView>
-            <View>
-                {/* <Image
-                    source={require('../../assets/images/Logo.png')} /> */}
+            <View style={styles.logo}>
+                <Image
+                    source={require('../../assets/images/Logo.png')} />
             </View>
-
             <View>
                 <Text style={styles.signin}>Sign In</Text>
                 <Text style={styles.subtext}>Enter login credentials</Text>
             </View>
             <View style={styles.textInput}>
                 <Text style={styles.textInput1}>Username / Email address</Text>
-                <View>
+                <View style={styles.sectionStyle}>
+                    <Image
+                        source={require('../../assets/images/at.png')}
+                        style={styles.iconAt}
+                    />
                     <TextInput
                         style={styles.emailBox}
                         placeholder="Enter Email Address"
+
                     />
                 </View>
 
@@ -36,18 +40,10 @@ const Login = () => {
 
 const styles = StyleSheet.create({
     logo: {
-        marginLeft: '13%',
-        marginRight: '77%',
-        marginTop: '5%',
+        marginLeft: 50,
+        marginRight: 50,
+        marginTop: 50,
 
-    },
-    Text: {
-        // display: 'flex',
-        // flex: 1,
-        // fontFamily: 'sans'
-
-        fontWeight: 'bold',
-        fontSize: 22,
     },
 
     signin: {
@@ -56,7 +52,7 @@ const styles = StyleSheet.create({
         fontSize: 32,
         letterSpacing: 0.5,
         paddingHorizontal: 50,
-        marginTop: 100,
+        marginTop: 50,
         fontFamily: 'Open-sans'
     },
     subtext: {
@@ -88,6 +84,12 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         marginTop: 4,
         borderColor: '#828CA2',
+    },
+    iconAt: {
+        marginHorizontal: 10
+    },
+    sectionStyle: {
+
     }
 
 
