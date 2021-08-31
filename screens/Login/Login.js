@@ -1,19 +1,35 @@
 import React from 'react';
-import { View, Text, StatusBar, StyleSheet, Platform, Image, ScrollView } from 'react-native';
-
+import { View, Text, StatusBar, StyleSheet, Platform, Image, ScrollView, TextInput, SafeAreaView, } from 'react-native';
+import { Ionicons } from 'react-native-vector-icons/Ionicons'
 
 
 
 const Login = () => {
     return (
         <ScrollView>
-            <View style={styles.logo}>
-                <Image source={require('../../assets/images/Logo.png')} />
+            <View>
+                {/* <Image
+                    source={require('../../assets/images/Logo.png')} /> */}
             </View>
-            <View style={styles.SignIn}>
-                <Text>Sign In</Text>
+
+            <View>
+                <Text style={styles.signin}>Sign In</Text>
+                <Text style={styles.subtext}>Enter login credentials</Text>
+            </View>
+            <View style={styles.textInput}>
+                <Text style={styles.textInput1}>Username / Email address</Text>
+                <View>
+                    <TextInput
+                        style={styles.emailBox}
+                        placeholder="Enter Email Address"
+                    />
+                </View>
+
+
+
             </View>
         </ScrollView>
+
     );
 }
 
@@ -25,12 +41,55 @@ const styles = StyleSheet.create({
         marginTop: '5%',
 
     },
-    SignIn: {
-        display: 'flex',
-        flex: 1,
-        fontFamily: 'sans'
+    Text: {
+        // display: 'flex',
+        // flex: 1,
+        // fontFamily: 'sans'
 
+        fontWeight: 'bold',
+        fontSize: 22,
+    },
+
+    signin: {
+        fontWeight: 'bold',
+        color: '#1B2F5D',
+        fontSize: 32,
+        letterSpacing: 0.5,
+        paddingHorizontal: 50,
+        marginTop: 100,
+        fontFamily: 'Open-sans'
+    },
+    subtext: {
+        paddingHorizontal: 50,
+        paddingTop: 5,
+        color: 'rgba(27, 47, 93, 0.75)',
+        fontSize: 16,
+        fontFamily: 'Open-sans'
+    },
+    textInput: {
+        paddingTop: 50,
+        marginLeft: 20
+
+    },
+
+    textInput1: {
+        fontWeight: 'bold',
+        color: '#1B2F5D',
+        fontSize: 14,
+        paddingHorizontal: 20,
+        fontFamily: 'Open-sans',
+        marginHorizontal: 15,
+
+    },
+    emailBox: {
+        borderRadius: 20,
+        marginHorizontal: 10,
+        padding: 10,
+        borderWidth: 2,
+        marginTop: 4,
+        borderColor: '#828CA2',
     }
+
 
 })
 
