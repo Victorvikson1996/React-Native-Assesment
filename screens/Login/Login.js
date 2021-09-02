@@ -1,9 +1,10 @@
 import React from 'react';
-import { View, Text, StatusBar, StyleSheet, Platform, Image, ScrollView, TextInput, SafeAreaView, Button, TouchableOpacity } from 'react-native';
+import { View, Text, StatusBar, StyleSheet, Platform, Image, ScrollView, TextInput, SafeAreaView, Button, TouchableOpacity, Pressable } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import AntDesign from 'react-native-vector-icons/AntDesign'
 import styles from './style'
 
+const Bold = ({ children }) => <Text style={{ fontWeight: 'bold' }}>{children}</Text>
 
 const Login = ({ navigation }) => {
     return (
@@ -42,6 +43,10 @@ const Login = ({ navigation }) => {
                         <AntDesign style={styles.arrow} name='arrowright' size={25} />
                         <Text style={styles.buttonText}>LOGIN</Text>
                     </TouchableOpacity>
+                    <Pressable>
+                        <Text style={styles.subtext2}>Don't Have an account? <Bold>Create Account</Bold></Text>
+                    </Pressable>
+
                 </View>
             </View>
         </ScrollView>

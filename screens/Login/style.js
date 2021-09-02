@@ -95,6 +95,17 @@ const styles = StyleSheet.create({
 
     },
 
+    subtext2: {
+        paddingHorizontal: 20,
+        paddingTop: 5,
+        color: 'rgba(27, 47, 93, 0.75)',
+        fontSize: 16,
+        fontFamily: 'Open-sans',
+        marginStart: 10
+    },
+    buttomText: {
+
+    }
 })
 
 

@@ -15,11 +15,16 @@
     "@react-navigation/stack": "^6.0.7",
     "react": "17.0.2",
     "react-native": "0.65.1",
+    "react-native-flash-message": "^0.1.23",
     "react-native-gesture-handler": "^1.10.3",
     "react-native-onboarding-swiper": "^1.1.4",
-    "react-native-safe-area-context": "^3.3.0",
+    "react-native-popup-confirm-toast": "^2.0.2",
+    "react-native-safe-area-context": "^3.3.2",
+    "react-native-safe-area-view": "^1.1.1",
     "react-native-screens": "^3.6.0",
     "react-native-splash-screen": "^3.2.0",
+    "react-native-status-bar-height": "^2.6.0",
+    "react-native-toast-banner": "^1.0.0",
     "react-native-vector-icons": "^8.1.0"
   },
   "devDependencies": {
