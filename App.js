@@ -22,6 +22,7 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+import createAccount from './screens/ErrorMessage/createAccount';
 
 
 
@@ -85,6 +86,23 @@ const App = (props) => {
             },
           })}
         />
+
+
+        <Stack.Screen
+          name="createAccount"
+          component={createAccount}
+          options={() => ({
+            gestureEnabled: false,
+            cardStyleInterpolator: ({ current: { progress } }) => {
+              return {
+                cardStyle: {
+                  opacity: progress,
+                },
+              };
+            },
+          })}
+        />
+
       </Stack.Navigator>
     </NavigationContainer>
   )

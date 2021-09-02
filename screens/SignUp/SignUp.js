@@ -1,17 +1,29 @@
 import React from 'react';
-import { View, Text, StatusBar, StyleSheet, Platform, Image, ScrollView, TextInput, Pressable, SafeAreaView, Button, TouchableOpacity } from 'react-native';
+import { View, Text, Image, ScrollView, TextInput, Pressable, TouchableOpacity } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import AntDesign from 'react-native-vector-icons/AntDesign'
 import styles from './styles'
 import FlashMessage, { showMessage } from "react-native-flash-message";
-// import { Root, Toast, Popup } from 'react-native-popup-confirm-toast'
-// import { getStatusBarHeight } from 'react-native-status-bar-height';
+import { useNavigation } from '@react-navigation/core';
 
-const Bold = ({ children }) => <Text style={{ fontWeight: 'bold' }}>{children}</Text>
+
+
+
+
 console.log(showMessage)
 
 
 const SignUp = () => {
+
+    const navigation = useNavigation();
+
+    const Bold = ({ children }) => (
+
+        <Text onPress={() => navigation.navigate('createAccount')} style={{ fontWeight: 'bold' }}>{children}</Text>
+
+
+    )
+
     return (
         <ScrollView>
             <FlashMessage position="top" />
@@ -60,7 +72,7 @@ const SignUp = () => {
                         <Text style={styles.buttonText}>LOGIN</Text>
                     </TouchableOpacity>
                     <Pressable>
-                        <Text style={styles.subtext2}>Don't Have an account? <Bold onPress={() => navigation.navigate('')}>Create Account</Bold></Text>
+                        <Text style={styles.subtext2}>Don't Have an account? <Bold>Create Account</Bold></Text>
                     </Pressable>
                 </View>
             </View>
