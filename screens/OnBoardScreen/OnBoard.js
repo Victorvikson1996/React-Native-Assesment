@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
 import { View, StyleSheet, Image, } from 'react-native';
-
-// const width = Dimensions.get('window');
-// const height = Dimensions.get('window');
+import styles from './styles'
 
 const OnBoard = ({ navigation }) => {
     setTimeout(() => {
@@ -22,28 +20,6 @@ const OnBoard = ({ navigation }) => {
 
 
 }
-
-
-const styles = StyleSheet.create({
-
-
-    container: {
-        width: '100%',
-        height: '100%',
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-        flexDirection: 'row',
-
-    },
-    image1: {
-
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        flexDirection: 'row',
-    }
-})
-
 
 
 
