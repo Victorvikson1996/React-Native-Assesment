@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StatusBar, StyleSheet, Platform, Image, ScrollView, TextInput, SafeAreaView, Button, TouchableOpacity, Pressable } from 'react-native';
+import { View, Text, Image, ScrollView, TextInput, TouchableOpacity, Pressable } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import AntDesign from 'react-native-vector-icons/AntDesign'
 import styles from './style'

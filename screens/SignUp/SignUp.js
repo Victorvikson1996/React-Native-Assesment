@@ -19,7 +19,7 @@ const SignUp = () => {
 
     const Bold = ({ children }) => (
 
-        <Text onPress={() => navigation.navigate('createAccount')} style={{ fontWeight: 'bold' }}>{children}</Text>
+        <Text onPress={() => navigation.navigate('createAccount')} style={{ fontWeight: 'bold', color: '#1B2F5D' }}>{children}</Text>
 
 
     )

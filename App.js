@@ -12,17 +12,7 @@ import { createStackNavigator } from '@react-navigation/stack'
 import SignUp from './screens/SignUp/SignUp';
 import Login from './screens/Login/Login';
 import OnBoard from './screens/OnBoardScreen/OnBoard';
-
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
-import createAccount from './screens/ErrorMessage/createAccount';
+import createAccount from './screens/Account/createAccount';
 
 
 

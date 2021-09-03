@@ -16,9 +16,6 @@ const OnBoard = ({ navigation }) => {
             </View>
         </View>
     );
-
-
-
 }
 
 
